@@ -4,116 +4,116 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
 
 ## Project Structure for Backend
 
-📂 project-root
-├── 📂 server
-│   ├── 📂 src
-│   │   ├── 📂 controllers
-│   │   │   ├── auth.controller.js
-│   │   │   ├── order.controller.js
-│   │   │   ├── product.controller.js
-│   │   │   ├── orderHistory.controller.js
-│   │   │   ├── payment.controller.js
-│   │   │   └── shipping.controller.js
-│   │   ├── 📂 models
-│   │   │   ├── user.model.js
-│   │   │   ├── product.model.js
-│   │   │   ├── order.model.js
-│   │   │   ├── orderHistory.model.js
-│   │   │   ├── payment.model.js
-│   │   │   └── shipping.model.js
-│   │   ├── 📂 routes
-│   │   │   ├── auth.route.js
-│   │   │   ├── order.route.js
-│   │   │   ├── product.route.js
-│   │   │   ├── orderHistory.route.js
-│   │   │   ├── payment.route.js
-│   │   │   └── shipping.route.js
-│   │   ├── 📂 services
-│   │   │   ├── auth.service.js
-│   │   │   ├── order.service.js
-│   │   │   ├── product.service.js
-│   │   │   ├── orderHistory.service.js
-│   │   │   ├── payment.service.js
-│   │   │   └── shipping.service.js
-│   │   ├── app.js
-│   │   ├── config.js
-│   │   └── server.js
-├── .env
-├── package.json
-└── README.md
+    📂 project-root
+    ├── 📂 server
+    │   ├── 📂 src
+    │   │   ├── 📂 controllers
+    │   │   │   ├── auth.controller.js
+    │   │   │   ├── order.controller.js
+    │   │   │   ├── product.controller.js
+    │   │   │   ├── orderHistory.controller.js
+    │   │   │   ├── payment.controller.js
+    │   │   │   └── shipping.controller.js
+    │   │   ├── 📂 models
+    │   │   │   ├── user.model.js
+    │   │   │   ├── product.model.js
+    │   │   │   ├── order.model.js
+    │   │   │   ├── orderHistory.model.js
+    │   │   │   ├── payment.model.js
+    │   │   │   └── shipping.model.js
+    │   │   ├── 📂 routes
+    │   │   │   ├── auth.route.js
+    │   │   │   ├── order.route.js
+    │   │   │   ├── product.route.js
+    │   │   │   ├── orderHistory.route.js
+    │   │   │   ├── payment.route.js
+    │   │   │   └── shipping.route.js
+    │   │   ├── 📂 services
+    │   │   │   ├── auth.service.js
+    │   │   │   ├── order.service.js
+    │   │   │   ├── product.service.js
+    │   │   │   ├── orderHistory.service.js
+    │   │   │   ├── payment.service.js
+    │   │   │   └── shipping.service.js
+    │   │   ├── app.js
+    │   │   ├── config.js
+    │   │   └── server.js
+    ├── .env
+    ├── package.json
+    └── README.md
 
 ---
 
-📂 client
-├── 📂 src
-│   ├── 📂 app
-│   │   ├── 📂 components
-│   │   │   ├── 📂 header
-│   │   │   │   ├── header.component.ts
-│   │   │   │   ├── header.component.html
-│   │   │   │   └── header.component.scss
-│   │   │   ├── 📂 footer
-│   │   │   │   ├── footer.component.ts
-│   │   │   │   ├── footer.component.html
-│   │   │   │   └── footer.component.scss
-│   │   │   ├── 📂 product-card
-│   │   │   │   ├── product-card.component.ts
-│   │   │   │   ├── product-card.component.html
-│   │   │   │   └── product-card.component.scss
-│   │   │   └── 📂 toast
-│   │   │       ├── toast.component.ts
-│   │   │       ├── toast.component.html
-│   │   │       └── toast.component.scss
-│   │   ├── 📂 pages
-│   │   │   ├── 📂 home
-│   │   │   │   ├── home.component.ts
-│   │   │   │   ├── home.component.html
-│   │   │   │   └── home.component.scss
-│   │   │   ├── 📂 product-details
-│   │   │   │   ├── product-details.component.ts
-│   │   │   │   ├── product-details.component.html
-│   │   │   │   └── product-details.component.scss
-│   │   │   ├── 📂 cart
-│   │   │   │   ├── cart.component.ts
-│   │   │   │   ├── cart.component.html
-│   │   │   │   └── cart.component.scss
-│   │   │   ├── 📂 checkout
-│   │   │   │   ├── checkout.component.ts
-│   │   │   │   ├── checkout.component.html
-│   │   │   │   └── checkout.component.scss
-│   │   │   └── 📂 orders
-│   │   │       ├── orders.component.ts
-│   │   │       ├── orders.component.html
-│   │   │       └── orders.component.scss
-│   │   ├── 📂 services
-│   │   │   ├── product.service.ts
-│   │   │   ├── auth.service.ts
-│   │   │   ├── cart.service.ts
-│   │   │   ├── order.service.ts
-│   │   │   └── toast.service.ts
-│   │   ├── 📂 pipes
-│   │   │   └── currency-format.pipe.ts
-│   │   ├── 📂 guards
-│   │   │   └── auth.guard.ts
-│   │   ├── 📂 models
-│   │   │   ├── product.model.ts
-│   │   │   ├── user.model.ts
-│   │   │   └── order.model.ts
-│   │   ├── 📂 styles
-│   │   │   ├── variables.scss
-│   │   │   ├── main.scss
-│   │   │   └── mixins.scss
-│   │   ├── app.component.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.scss
-│   │   └── app.config.ts
-├── 📂 assets
-├── 📂 environments
-│   ├── environment.ts
-│   └── environment.prod.ts
-├── main.ts
-├── index.html
-└── styles.scss
+    📂 client
+    ├── 📂 src
+    │   ├── 📂 app
+    │   │   ├── 📂 components
+    │   │   │   ├── 📂 header
+    │   │   │   │   ├── header.component.ts
+    │   │   │   │   ├── header.component.html
+    │   │   │   │   └── header.component.scss
+    │   │   │   ├── 📂 footer
+    │   │   │   │   ├── footer.component.ts
+    │   │   │   │   ├── footer.component.html
+    │   │   │   │   └── footer.component.scss
+    │   │   │   ├── 📂 product-card
+    │   │   │   │   ├── product-card.component.ts
+    │   │   │   │   ├── product-card.component.html
+    │   │   │   │   └── product-card.component.scss
+    │   │   │   └── 📂 toast
+    │   │   │       ├── toast.component.ts
+    │   │   │       ├── toast.component.html
+    │   │   │       └── toast.component.scss
+    │   │   ├── 📂 pages
+    │   │   │   ├── 📂 home
+    │   │   │   │   ├── home.component.ts
+    │   │   │   │   ├── home.component.html
+    │   │   │   │   └── home.component.scss
+    │   │   │   ├── 📂 product-details
+    │   │   │   │   ├── product-details.component.ts
+    │   │   │   │   ├── product-details.component.html
+    │   │   │   │   └── product-details.component.scss
+    │   │   │   ├── 📂 cart
+    │   │   │   │   ├── cart.component.ts
+    │   │   │   │   ├── cart.component.html
+    │   │   │   │   └── cart.component.scss
+    │   │   │   ├── 📂 checkout
+    │   │   │   │   ├── checkout.component.ts
+    │   │   │   │   ├── checkout.component.html
+    │   │   │   │   └── checkout.component.scss
+    │   │   │   └── 📂 orders
+    │   │   │       ├── orders.component.ts
+    │   │   │       ├── orders.component.html
+    │   │   │       └── orders.component.scss
+    │   │   ├── 📂 services
+    │   │   │   ├── product.service.ts
+    │   │   │   ├── auth.service.ts
+    │   │   │   ├── cart.service.ts
+    │   │   │   ├── order.service.ts
+    │   │   │   └── toast.service.ts
+    │   │   ├── 📂 pipes
+    │   │   │   └── currency-format.pipe.ts
+    │   │   ├── 📂 guards
+    │   │   │   └── auth.guard.ts
+    │   │   ├── 📂 models
+    │   │   │   ├── product.model.ts
+    │   │   │   ├── user.model.ts
+    │   │   │   └── order.model.ts
+    │   │   ├── 📂 styles
+    │   │   │   ├── variables.scss
+    │   │   │   ├── main.scss
+    │   │   │   └── mixins.scss
+    │   │   ├── app.component.ts
+    │   │   ├── app.component.html
+    │   │   ├── app.component.scss
+    │   │   └── app.config.ts
+    ├── 📂 assets
+    ├── 📂 environments
+    │   ├── environment.ts
+    │   └── environment.prod.ts
+    ├── main.ts
+    ├── index.html
+    └── styles.scss
 
 ## Features
 
