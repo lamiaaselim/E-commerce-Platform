@@ -21,4 +21,13 @@ exports.getOrder = async (req, res) => {
   }
 };
 
+exports.getOrders = async (req, res) => {
+  try {
+    const orders = await OrderService.getAllOrders();
+    res.json(orders);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching order', error });
+  }
+};
+
 // Additional methods for update, delete, and fetching user orders

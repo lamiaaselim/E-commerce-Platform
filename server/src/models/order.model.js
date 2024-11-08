@@ -13,7 +13,8 @@ const OrderSchema = new Schema({
       product: { type: Schema.Types.ObjectId, ref: 'Product', required: true },
       quantity: { type: Number, required: true },
       priceAtOrder: { type: Number, required: true },
-    },
+       _id: false,
+    }
   ],
   totalAmount: { type: Number, required: true },
   status: {

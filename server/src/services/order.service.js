@@ -10,6 +10,9 @@ class OrderService {
   async getOrderById(orderId) {
     return await Order.findById(orderId).populate('user products');
   }
+  async getAllOrders() {
+    return await Order.find();;
+  }
 
   async updateOrder(orderId, updateData) {
     return await Order.findByIdAndUpdate(orderId, updateData, { new: true });
