@@ -15,23 +15,18 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
 
 ### 1. Install Dependencies
 
-```bash
-    npm install
+### Run the Server
 
-----
-
-###Environment Variables:
-```bash
-    PORT=8000
-    MONGO_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    NODE_ENV='development'
-
-
-###Run the Server:
     ```bash
             npm start
 
+### Environment Variables
+
+    ```bash
+        PORT=8000
+        MONGO_URI=your_mongodb_uri
+        JWT_SECRET=your_jwt_secret
+        NODE_ENV='development'
 
 ## Project Structure for Backend
 
