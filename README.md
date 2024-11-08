@@ -12,10 +12,14 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
   - [Frontend Features](#frontend-features)
   - [Getting Started (Backend)](#getting-started-backend)
     - [1. Install Dependencies](#1-install-dependencies)
-    - [Run the Server](#run-the-server)
-    - [Environment Variables](#environment-variables)
+    - [2. Run the Server](#2-run-the-server)
+    - [3. Environment Variables](#3-environment-variables)
   - [Project Structure for Backend](#project-structure-for-backend)
   - [Getting Started (Frontend)](#getting-started-frontend)
+    - [1.  Install Dependencies](#1--install-dependencies)
+    - [2 .Environment Variables](#2-environment-variables)
+    - [3. Run the Development Server](#3-run-the-development-server)
+    - [4. Navigate to the Application\*\*](#4-navigate-to-the-application)
   - [Project Structure for Frontend](#project-structure-for-frontend)
   - [Tech Stack](#tech-stack)
   - [Future Improvements](#future-improvements)
@@ -49,13 +53,17 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
 
 ### 1. Install Dependencies
 
-### Run the Server
+    ```bash
+            npm install
+    ```
+
+### 2. Run the Server
 
     ```bash
             npm start
     ```
 
-### Environment Variables
+### 3. Environment Variables
 
     ```bash
         PORT=8000
@@ -108,13 +116,13 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
 
 ## Getting Started (Frontend)
 
-1. **Install Dependencies**
+### 1.  Install Dependencies
 
-        ```
-            npm install
-        ```
+    ```       
+        npm install
+    ```
 
-2. **Environment Variables**
+### 2 .Environment Variables
 
     Configure the frontend environment in `src/environments/environment.ts`:
         ```
@@ -124,12 +132,13 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
             };
         ```
 
-3. **Run the Development Server**
+### 3. Run the Development Server
+
         ```
             ng serve
         ```
 
-4. **Navigate to the Application**
+### 4. Navigate to the Application**
 
      Open your browser at [http://localhost:4200](http://localhost:4200) to view the application.
 
