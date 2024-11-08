@@ -15,13 +15,13 @@ const generateToken = (user) => {
 };
 exports.generateToken = generateToken; 
 
-exports.register = async (username, password) => {
-  const user = await UserSchema.create({ username, password });
+exports.register = async (username,email, password) => {
+  const user = await UserSchema.create({ username, email ,password });
   return user;
 };
 
-exports.login = async (username, password) => {
-  const user = await UserSchema.findOne({ username });
+exports.login = async (email, password) => {
+  const user = await UserSchema.findOne({ email });
   if (user && (await user.matchPassword(password))) {
     return { user, token: generateToken(user)};
   }

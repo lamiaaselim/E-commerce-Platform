@@ -2,6 +2,37 @@
 
 This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB backend and an Angular 18 frontend featuring standalone components. The application includes secure user authentication, authorization, and detailed product management, along with seamless order processing, payment integration, and shipping management. Users can track order history, and the frontend offers a responsive, intuitive interface with custom toast notifications to enhance the shopping experience. The project follows a well-structured, modular approach with clearly defined layers for models, services, controllers, and routes, ensuring scalability and maintainability across the stack.
 
+## Backend Features
+
+- **User Authentication & Authorization**: JWT-based authentication for secure access.
+- **Product Management**: CRUD operations for products.
+- **Order Processing**: Handle order creation, updates, and tracking.
+- **Order History**: Maintain a log of order status changes.
+- **Payment Processing**: Record payment details and status.
+- **Shipping Management**: Store and update shipping details.
+
+## Getting Started (Backend)
+
+### 1. Install Dependencies
+
+```bash
+    npm install
+
+----
+
+###Environment Variables:
+```bash
+    PORT=8000
+    MONGO_URI=your_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    NODE_ENV='development'
+
+
+###Run the Server:
+    ```bash
+            npm start
+
+
 ## Project Structure for Backend
 
     📂 project-root
