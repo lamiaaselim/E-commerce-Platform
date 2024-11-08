@@ -1,0 +1,29 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.btn-purple{
+  background-color: purple !important;
+  color: white !important;;
+}
+
+.btn-purple-outline{
+  color: purple !important;
+  border: 2px solid purple !important;
+  background-color: white !important;;
+}
+
+.btn-purple-outline:hover{
+  color: white !important;
+  border: 2px solid purple !important;
+  background-color: purple !important;;
+}
+
+.text-purple{
+  color: purple !important;
+}
+

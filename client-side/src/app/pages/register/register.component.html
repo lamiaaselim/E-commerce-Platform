@@ -1,0 +1,135 @@
+<div class="container py-5">
+  <h1 class="text-center">Reactive Forms</h1>
+
+  <p class="text-center">{{ registerForm.value | json }}</p>
+
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <form [formGroup]="registerForm" novalidate>
+        <div class="mb-3">
+          <label for="exampleInputusername" class="form-label">username</label>
+          <input
+            [class.is-invalid]="username?.touched && username?.invalid"
+            formControlName="username"
+            type="text"
+            class="form-control"
+            id="exampleInputusername"
+            ng-reflect-name="username"
+            autocomplete="username"
+          />
+          <div *ngIf="username?.touched && username?.invalid">
+            <small class="text-danger" *ngIf="username?.errors?.['required']">
+              username is required
+            </small>
+            <small class="text-danger" *ngIf="username?.errors?.['minlength']">
+              username must be 5 letters at least
+            </small>
+            <small
+              class="text-danger"
+              *ngIf="username?.errors?.['forbiddenName']"
+            >
+              username admin is not allowed
+            </small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPass" class="form-label">Password</label>
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control"
+            id="exampleInputPass"
+            autocomplete="new-password"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">
+            Confirm Password</label
+          >
+          <input
+            autocomplete="new-password"
+            formControlName="confirmPassword"
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            [class.is-invalid]="registerForm.errors?.['misMatch']"
+          />
+          <small class="text-danger" *ngIf="registerForm.errors?.['misMatch']">
+            Confirm password must be match with password</small
+          >
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"> Email</label>
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control"
+            [class.is-invalid]="email?.touched && email?.invalid"
+          />
+          <small class="text-danger" *ngIf="email?.touched && email?.invalid"
+            >Email is required
+          </small>
+        </div>
+        <button
+          class="btn btn-success float-end"
+          (click)="addAlternativeEmail()"
+        >
+          Add Alternative Email
+        </button>
+        <div formArrayName="alternativeEmails" class="mb-3">
+          <div *ngFor="let email of alternativeEmails.controls; let i = index">
+            <label> No. {{ i + 1 }}</label>
+            <input type="text" class="form-control" [formControlName]="i" />
+            <button class="btn btn-danger float-end" (click)="deleteInput(i)">
+              -
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="example2"
+            (click)="setEmailValidators()"
+            formControlName="subscribe"
+          />
+          <label for="example2" class="form-check-label">
+            send me new offer</label
+          >
+        </div>
+
+        <div formGroupName="address" class="mb-3">
+          <div class="form-group">
+            <label class="form-label"> City</label>
+            <input formControlName="city" type="text" class="form-control" />
+          </div>
+
+          <div>
+            <label class="form-label"> Street</label>
+            <input formControlName="street" type="text" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"> Building</label>
+            <input
+              formControlName="building"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Remember me
+          </label>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

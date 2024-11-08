@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <div class="col-md-8 offset-md-2">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link text-purple" routerLink="/admin/list" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+          >List</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-purple" routerLink="/admin/add" routerLinkActive="active"
+          >Add</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-purple" routerLink="/admin/order-list" routerLinkActive="active"
+          >Orders</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<div class="container text-center py-3 mb-4">
+  <div class="p-5 mb-4 lc-block">
+    <div class="lc-block mb-4">
+      <div editable="rich">
+        <h2 class="fw-bold display-2">The Ecommerce Platform</h2>
+        <h2 class="fw-bold display-2">Admin cPanal Page <br /></h2>
+      </div>
+    </div>
+    <div class="lc-block mb-5">
+      <div editable="rich">
+        <p class="lead">
+          Using a series of utilities, you can create this jumbotron.<br />just
+          like the one in previous versions of Bootstrap.
+        </p>
+      </div>
+    </div>
+    <div class="lc-block">
+      <a class="btn btn-purple" href="#" role="button">Add Manager</a>
+    </div>
+  </div>
+</div>
