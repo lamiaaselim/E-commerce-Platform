@@ -2,6 +2,24 @@
 
 This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB backend and an Angular 18 frontend featuring standalone components. The application includes secure user authentication, authorization, and detailed product management, along with seamless order processing, payment integration, and shipping management. Users can track order history, and the frontend offers a responsive, intuitive interface with custom toast notifications to enhance the shopping experience. The project follows a well-structured, modular approach with clearly defined layers for models, services, controllers, and routes, ensuring scalability and maintainability across the stack.
 
+---
+
+## Table of Contents
+
+- [Full-stack E-commerce Platform](#full-stack-e-commerce-platform)
+  - [Table of Contents](#table-of-contents)
+  - [Backend Features](#backend-features)
+  - [Frontend Features](#frontend-features)
+  - [Getting Started (Backend)](#getting-started-backend)
+    - [1. Install Dependencies](#1-install-dependencies)
+    - [Run the Server](#run-the-server)
+    - [Environment Variables](#environment-variables)
+  - [Project Structure for Backend](#project-structure-for-backend)
+  - [Getting Started (Frontend)](#getting-started-frontend)
+  - [Project Structure for Frontend](#project-structure-for-frontend)
+
+---
+
 ## Backend Features
 
 - **User Authentication & Authorization**: JWT-based authentication for secure access.
@@ -10,6 +28,20 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
 - **Order History**: Maintain a log of order status changes.
 - **Payment Processing**: Record payment details and status.
 - **Shipping Management**: Store and update shipping details.
+
+---
+
+## Frontend Features
+
+- **Responsive Design**: A seamless user experience across devices.
+- **Custom Toast Notifications**: Feedback on actions like adding to cart or checkout success.
+- **Standalone Components**: Angular 18 components for modularity and reusability.
+- **Order Tracking**: View and monitor order status in real-time.
+- **Product Details**: Detailed product pages with image galleries, pricing, and descriptions.
+- **Cart Management**: Add, update, and remove items with ease.
+- **Secure Checkout**: Integration with backend for secure payment handling.
+
+---
 
 ## Getting Started (Backend)
 
@@ -20,7 +52,7 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
     ```bash
             npm start
     ```
-    
+
 ### Environment Variables
 
     ```bash
@@ -71,6 +103,37 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
     └── README.md
 
 ---
+
+## Getting Started (Frontend)
+
+1. **Install Dependencies**
+
+        ```
+            npm install
+        ```
+
+2. **Environment Variables**
+
+    Configure the frontend environment in `src/environments/environment.ts`:
+        ```
+            export const environment = {
+            production: false,
+            apiUrl: 'http://localhost:8000/api'
+            };
+        ```
+
+3. **Run the Development Server**
+        ```
+            ng serve
+        ```
+
+4. **Navigate to the Application**
+
+     Open your browser at [http://localhost:4200](http://localhost:4200) to view the application.
+
+---
+
+## Project Structure for Frontend
 
     📂 client
     ├── 📂 src
@@ -142,21 +205,3 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
     ├── main.ts
     ├── index.html
     └── styles.scss
-
-## Features
-
-- **User Management**: User registration, login, and authentication.
-- **Product Management**: CRUD functionality for products, including image uploads.
-- **Order Processing**: Create and manage orders with status updates.
-- **Order History**: Logs order status changes and updates over time.
-- **Payment Processing**: Tracks payment transactions for each order.
-- **Shipping Management**: Handles shipping details and updates shipping statuses.
-- **Real-time Updates**: Uses Socket.IO for real-time updates.
-
-## Getting Started
-
-### Prerequisites
-
-- **Node.js** (v14 or above)
-- **MongoDB** (local or Atlas)
-- **Postman** (for testing APIs)
