@@ -19,7 +19,8 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
 
     ```bash
             npm start
-
+    ```
+    
 ### Environment Variables
 
     ```bash
@@ -27,6 +28,7 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
         MONGO_URI=your_mongodb_uri
         JWT_SECRET=your_jwt_secret
         NODE_ENV='development'
+    ```
 
 ## Project Structure for Backend
 
