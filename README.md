@@ -17,6 +17,8 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
   - [Project Structure for Backend](#project-structure-for-backend)
   - [Getting Started (Frontend)](#getting-started-frontend)
   - [Project Structure for Frontend](#project-structure-for-frontend)
+  - [Tech Stack](#tech-stack)
+  - [Future Improvements](#future-improvements)
 
 ---
 
@@ -205,3 +207,24 @@ This is a comprehensive e-commerce platform with a Node.js, Express, and MongoDB
     ├── main.ts
     ├── index.html
     └── styles.scss
+---
+
+## Tech Stack
+
+- Backend: Node.js, Express, MongoDB, Mongoose, Socket.IO, JWT
+- Frontend: Angular 18, TypeScript, SCSS, Angular Material, Angular Router
+- dditional: Socket.IO for real-time updates, and secure RESTful API for frontend-backend communication.
+  
+---
+
+## Future Improvements
+
+- Future Improvements
+- Enhanced Search and Filtering: Implement advanced search options for product listings.
+- User Roles & Permissions: Expand roles to support multiple admin levels.
+- Wishlist Feature: Allow users to save products to a wishlist.
+- Product Reviews and Ratings: Enable user-generated reviews and ratings for products.
+- Discounts and Promotions: Add support for promotional codes and discounts.
+- Notifications: Implement email or SMS notifications for order updates.
+- Improved Order Analytics: Include analytics for better business insights.
+  
