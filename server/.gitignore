@@ -28,3 +28,4 @@ Thumbs.db
 
 # environment variables
 .env
+/.env
