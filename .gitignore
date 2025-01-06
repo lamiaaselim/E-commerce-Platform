@@ -28,3 +28,8 @@ Thumbs.db
 
 # Enviroment Variables
 .env
+
+# Ignore .env files
+.env
+server/.env
+client-side/environments
