@@ -4,15 +4,14 @@
       {
         "src": "src/server.js",
         "use": "@vercel/node",
-        "config": {
-        "maxDuration": 300 
-      }
+        "maxDuration": 900
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "src/server.js"
+        "dest": "src/server.js",
+        "maxDuration": 900
       }
     ]
   }
